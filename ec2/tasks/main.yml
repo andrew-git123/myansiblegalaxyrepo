@@ -1,0 +1,21 @@
+---
+name: {{ name }}
+  hosts: {{ hosts }}
+  gather_facts: {{ gather_facts }}
+  tasks:
+    - ec2:
+        key_name: {{ key_name }}
+        region: {{ region }}
+        instance_type: {{ instance_type }}
+        image: {{ image }}
+        wait: {{ wait }}
+        group_id: {{ group_id }}
+        count: {{ count }}
+        vpc_subnet_id: {{ vpc_subnet_id }}
+        volumes:
+        - device_name: {{ device_name }}
+          volume_size: {{ volume_size }}
+        instance_tags:
+          Name: {{ Name }}
+          team: {{ team }}
+

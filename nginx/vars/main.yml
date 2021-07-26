@@ -1,0 +1,7 @@
+---
+nginx_listen_port: 80
+nginx_ip: 192.169.7.9:5432
+nginx_app_port: 5432
+
+
+# vars file for nginx

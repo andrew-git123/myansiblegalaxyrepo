@@ -1,0 +1,9 @@
+---
+key_name: andrew
+region: us-east-1
+instance_type: t2.micro
+image: ami-09e67e426f25ce0d7
+group_id: sg-0092b8501bfda595b
+vpc_subnet_id: subnet-e240ca84
+
+# vars file for ec2

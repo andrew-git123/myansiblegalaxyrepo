@@ -1,0 +1,21 @@
+---
+- name: nginx startup
+  hosts: localhost
+  tasks:
+    - name: apt update
+      apt:
+        update_cache: yes
+
+    - name: install nginx
+      apt:
+        name: nginx
+        state: latest
+
+    - name: checking service status
+      command: systemctl status nginx
+      register: result
+
+    - name: print nginx server status
+      debug:
+        var: result
+
